@@ -55,7 +55,9 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="50dp">
+        android:paddingBottom="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -69,7 +71,7 @@
                 android:gravity="bottom|center"
                 android:padding="10dp"
                 android:text="Nombre U"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="22sp"
@@ -90,7 +92,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="@string/mision"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -105,8 +107,7 @@
                 android:layout_height="wrap_content"
                 android:padding="6dp"
                 android:text="@string/vision"
-                android:textColor="@color/Brown"
-                android:textAlignment="center"
+                android:textColor="@color/negro"
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -123,7 +124,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="bottom|center"
                 android:text="@string/vision"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -142,8 +143,7 @@
                 android:paddingRight="10dp"
                 android:padding="6dp"
                 android:text="Texto Vision"
-                android:textColor="@color/Brown"
-                android:textAlignment="center"
+                android:textColor="@color/negro"
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -162,7 +162,7 @@
                 android:layout_below="@+id/textView3"
                 android:gravity="bottom|center"
                 android:text="@string/carreras"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -181,8 +181,7 @@
                 android:paddingRight="10dp"
                 android:text="Carreras Upam"
                 android:padding="6dp"
-                android:textColor="@color/Brown"
-                android:textAlignment="center"
+                android:textColor="@color/negro"
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -201,7 +200,7 @@
                 android:layout_below="@+id/textView3"
                 android:gravity="bottom|center"
                 android:text="@string/telefono"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -220,7 +219,7 @@
                 android:paddingRight="10dp"
                 android:text="Telefono UPAM"
                 android:padding="6dp"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="15sp"
@@ -241,7 +240,7 @@
                 android:gravity="bottom|center"
 
                 android:text="@string/direccion"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -260,7 +259,7 @@
                 android:paddingRight="10dp"
                 android:text="Dirección UPAM"
                 android:padding="6dp"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="15sp"
@@ -281,7 +280,7 @@
                 android:gravity="bottom|center"
 
                 android:text="Sitio Web"
-                android:textColor="@color/Amber"
+                android:textColor="@color/Cyan"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
         </TableRow>
 
@@ -303,7 +302,7 @@
                 android:text="Sitio web"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 </TableRow>
@@ -328,7 +327,7 @@
                 android:text="Latitud"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -354,7 +353,7 @@
                 android:text="Longitud"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="@color/Brown"
+                android:textColor="@color/negro"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

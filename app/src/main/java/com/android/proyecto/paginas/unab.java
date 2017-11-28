@@ -17,6 +17,8 @@ import android.widget.TextView;
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
+import com.android.proyecto.clases.Marcador;
+import com.android.proyecto.clases.MarcadoresSingleton;
 import com.android.proyecto.clases.ShareInformacion;
 import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.Sonsonate;
@@ -85,6 +87,8 @@ public class unab extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent mapa = new Intent(unab.this, MapaActivity.class);
+                Marcador m = MarcadoresSingleton.getInstance().getMarcador("UNAB");
+                mapa.putExtra("MARCADOR",m);
                 startActivity(mapa);
             }
         });

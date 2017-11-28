@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
+import com.android.proyecto.clases.Marcador;
+import com.android.proyecto.clases.MarcadoresSingleton;
 import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.SantaAna;
 
@@ -85,6 +87,8 @@ public class catolica extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent mapa = new Intent(catolica.this, MapaActivity.class);
+                    Marcador m = MarcadoresSingleton.getInstance().getMarcador("UCA");
+                    mapa.putExtra("MARCADOR",m);
                     startActivity(mapa);
                 }
         });

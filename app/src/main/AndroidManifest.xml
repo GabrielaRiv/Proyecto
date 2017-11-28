@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.proyecto">
+
+    <!-- adding internet permission android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ULocation"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:textColor="@color/White"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Registro"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Perfil"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Departamentos"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".universidades.Sonsonate"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".universidades.Ahuachapan"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".universidades.SantaAna"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".paginas.upam"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".paginas.itca"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".paginas.catolica"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".paginas.gavidia"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".paginas.unasa"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".paginas.uso"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".paginas.uma"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".paginas.unab"
+            android:screenOrientation="portrait"
+             />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Mapas.Mapa"
+            android:label="@string/title_activity_mapa" />
+        <activity
+            android:name=".Mapas.mapacatolica"
+            android:label="@string/title_activity_mapacatolica" />
+        <activity
+            android:name=".Mapas.mapagavidia"
+            android:label="@string/title_activity_mapagavidia" />
+        <activity
+            android:name=".Mapas.mapaitca"
+            android:label="@string/title_activity_mapaitca" />
+        <activity
+            android:name=".Mapas.mapauma"
+            android:label="@string/title_activity_mapauma" />
+        <activity
+            android:name=".Mapas.mapaunab"
+            android:label="@string/title_activity_mapaunab" />
+        <activity
+            android:name=".Mapas.mapaunasa"
+            android:label="@string/title_activity_mapaunasa" />
+        <activity
+            android:name=".Mapas.mapaupam"
+            android:label="@string/title_activity_mapaupam" />
+        <activity android:name=".Galeria.guso" />
+        <activity android:name=".Galeria.gcatolica" />
+        <activity android:name=".Galeria.ggavidia" />
+        <activity android:name=".Galeria.gitca" />
+        <activity android:name=".Galeria.guma" />
+        <activity android:name=".Galeria.gunab" />
+        <activity android:name=".Galeria.gunasa" />
+        <activity android:name=".Galeria.gupam"></activity>
+    </application>
+
+</manifest>

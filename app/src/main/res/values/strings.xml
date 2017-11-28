@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">U Location</string>
+    <string name="mensaje">Bienvenido a la aplicación
+  para localización de Universidades del área de Occidente</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="existente">No tengo Cuenta, Crear una</string>
+    <string name="id">ID</string>
+    <string name="usuario">Usuario</string>
+    <string name="correo">Correo</string>
+    <string name="cerrar">Cerrar Sesion</string>
+    <string name="tengo">Ya tengo cuenta, Ingresar</string>
+    <string name="ver">Ver Mapa</string>
+    <string name="seleccionar_departamento">Departamentos de Occidente</string>
+    <string name="sonsonate">Sonsonate</string>
+    <string name="santaana">Santa Ana</string>
+    <string name="ahuchapan">Ahuachapan</string>
+    <string name="title_activity_santa_ana">SantaAna</string>
+    <string name="seleccionarsonso">Universidades de Sonsonate</string>
+    <string name="seleccionarahua">Universidades de Ahuachapán</string>
+    <string name="seleccionarsanta">Universidades de Santa Ana</string>
+    <string name="itca">ITCA</string>
+    <string name="catolica">Universidad Católica de El Salvador</string>
+    <string name="gavidia">Universidad Francisco Gavidia</string>
+    <string name="unasa">Universidad Autónoma de Santa Ana</string>
+    <string name="upan">Universidad Panamerica</string>
+    <string name="uso">Universidad de Sonsonate</string>
+    <string name="uma">Universidad Modular Abierta</string>
+    <string name="unab">Universidad Andrés Bello</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="mision">Misión</string>
+    <string name="vision">Visión</string>
+    <string name="carreras">Carreras</string>
+    <string name="telefono">Telefono</string>
+    <string name="direccion">Dirección</string>
+    <string name="web">Sitio Web</string>
+    <string name="title_activity_unab">unab</string>
+    <string name="title_activity_mapa">Map</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapacatolica">Map</string>
+    <string name="title_activity_mapagavidia">Map</string>
+    <string name="title_activity_mapaitca">Map</string>
+    <string name="title_activity_mapauma">Map</string>
+    <string name="title_activity_mapaunab">Map</string>
+    <string name="title_activity_mapaunasa">Map</string>
+    <string name="title_activity_mapaupam">Map</string>
+</resources>

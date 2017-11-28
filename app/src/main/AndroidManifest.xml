@@ -23,8 +23,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait">
@@ -36,64 +35,49 @@
         </activity>
         <activity
             android:name=".Login"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Registro"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Perfil"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Departamentos"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".universidades.Sonsonate"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".universidades.Ahuachapan"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".universidades.SantaAna"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.upam"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.itca"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.catolica"
-            android:screenOrientation="portrait"
-           />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.gavidia"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.unasa"
-            android:screenOrientation="portrait"
-           />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.uso"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.uma"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".paginas.unab"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -107,38 +91,17 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity android:name=".galeria.guso" />
+        <activity android:name=".galeria.gcatolica" />
+        <activity android:name=".galeria.ggavidia" />
+        <activity android:name=".galeria.gitca" />
+        <activity android:name=".galeria.guma" />
+        <activity android:name=".galeria.gunab" />
+        <activity android:name=".galeria.gunasa" />
+        <activity android:name=".galeria.gupam" />
         <activity
-            android:name=".Mapas.Mapa"
-            android:label="@string/title_activity_mapa" />
-        <activity
-            android:name=".Mapas.mapacatolica"
-            android:label="@string/title_activity_mapacatolica" />
-        <activity
-            android:name=".Mapas.mapagavidia"
-            android:label="@string/title_activity_mapagavidia" />
-        <activity
-            android:name=".Mapas.mapaitca"
-            android:label="@string/title_activity_mapaitca" />
-        <activity
-            android:name=".Mapas.mapauma"
-            android:label="@string/title_activity_mapauma" />
-        <activity
-            android:name=".Mapas.mapaunab"
-            android:label="@string/title_activity_mapaunab" />
-        <activity
-            android:name=".Mapas.mapaunasa"
-            android:label="@string/title_activity_mapaunasa" />
-        <activity
-            android:name=".Mapas.mapaupam"
-            android:label="@string/title_activity_mapaupam" />
-        <activity android:name=".Galeria.guso" />
-        <activity android:name=".Galeria.gcatolica" />
-        <activity android:name=".Galeria.ggavidia" />
-        <activity android:name=".Galeria.gitca" />
-        <activity android:name=".Galeria.guma" />
-        <activity android:name=".Galeria.gunab" />
-        <activity android:name=".Galeria.gunasa" />
-        <activity android:name=".Galeria.gupam"></activity>
+            android:name=".mapa.MapaActivity"
+            android:label="@string/title_activity_mapa"></activity>
     </application>
 
 </manifest>

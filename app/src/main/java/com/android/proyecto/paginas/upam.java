@@ -18,8 +18,8 @@ import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
 import com.android.proyecto.clases.ShareInformacion;
+import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.Ahuachapan;
-import com.android.proyecto.Mapas.mapaupam;
 
 public class upam extends AppCompatActivity {
     TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
@@ -85,7 +85,7 @@ public class upam extends AppCompatActivity {
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mapa = new Intent(upam.this, mapaupam.class);
+                Intent mapa = new Intent(upam.this, MapaActivity.class);
                 startActivity(mapa);
             }
         });

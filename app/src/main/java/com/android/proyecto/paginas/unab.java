@@ -18,8 +18,8 @@ import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
 import com.android.proyecto.clases.ShareInformacion;
+import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.Sonsonate;
-import com.android.proyecto.Mapas.mapaunab;
 
 public class unab extends AppCompatActivity {
     TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
@@ -84,7 +84,7 @@ public class unab extends AppCompatActivity {
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mapa = new Intent(unab.this, mapaunab.class);
+                Intent mapa = new Intent(unab.this, MapaActivity.class);
                 startActivity(mapa);
             }
         });

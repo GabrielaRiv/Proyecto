@@ -19,9 +19,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.android.proyecto.Mapas.mapacatolica;
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
+import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.SantaAna;
 
 
@@ -84,7 +84,7 @@ public class catolica extends AppCompatActivity {
         mapa.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent mapa = new Intent(catolica.this, mapacatolica.class);
+                    Intent mapa = new Intent(catolica.this, MapaActivity.class);
                     startActivity(mapa);
                 }
         });

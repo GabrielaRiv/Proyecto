@@ -18,8 +18,8 @@ import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
 import com.android.proyecto.clases.ShareInformacion;
+import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.SantaAna;
-import com.android.proyecto.Mapas.mapaitca;
 
 public class itca extends AppCompatActivity {
     TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
@@ -85,7 +85,7 @@ public class itca extends AppCompatActivity {
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mapa = new Intent(itca.this, mapaitca.class);
+                Intent mapa = new Intent(itca.this, MapaActivity.class);
                 startActivity(mapa);
             }
         });

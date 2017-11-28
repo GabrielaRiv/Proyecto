@@ -1,4 +1,4 @@
-package com.android.proyecto.Galeria;
+package com.android.proyecto.galeria;
 
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;

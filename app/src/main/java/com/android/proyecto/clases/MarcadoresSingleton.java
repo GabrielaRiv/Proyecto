@@ -26,14 +26,14 @@ public class MarcadoresSingleton {
         public void llenarMarcadores(){
                 lstMarcadores       = new ArrayList<>();
                 //TODO modificar longitud y latitud
-                lstMarcadores.add(new Marcador(13.730287, -89.719526999999971,"UCA"));
-                lstMarcadores.add(new Marcador(13.7161024, -89.20346899999998,"Universidad Francisco Gavidia"));
-                lstMarcadores.add(new Marcador(13.730287, -89.719526999999971,"ITCA"));
-                lstMarcadores.add(new Marcador(13.7159035, -89.1536987,"UMA"));
-                lstMarcadores.add(new Marcador(13.730287, -89.719526999999971,"UNAB"));
-                lstMarcadores.add(new Marcador(13.7159035, -89.1536987,"UNASA"));
-                lstMarcadores.add(new Marcador(13.7161024, -89.20346899999998,"UPAM"));
-                lstMarcadores.add(new Marcador(13.7159035, -89.1536987,"USO"));
+                lstMarcadores.add(new Marcador(13.990198, -89.559823,"UCA"));
+                lstMarcadores.add(new Marcador(13.992571, -89.565372,"Universidad Francisco Gavidia"));
+                lstMarcadores.add(new Marcador(13.974301, -89.569290,"ITCA"));
+                lstMarcadores.add(new Marcador(13.722327, -89.728830,"UMA"));
+                lstMarcadores.add(new Marcador(13.721250, -89.721928,"UNAB"));
+                lstMarcadores.add(new Marcador(13.976491, -89.588709,"UNASA"));
+                lstMarcadores.add(new Marcador(13.919699, -89.847063,"UPAM"));
+                lstMarcadores.add(new Marcador(13.730288, -89.719527,"USO"));
         }
 
         public Marcador getMarcador(String nombre){

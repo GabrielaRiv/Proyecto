@@ -96,7 +96,7 @@ public class itca extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_activiry, menu);
+        getMenuInflater().inflate(R.menu.menu_activity, menu);
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem menuItem){

@@ -62,7 +62,7 @@ public class Departamentos extends AppCompatActivity {
        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
     }
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_activiry, menu);
+        getMenuInflater().inflate(R.menu.menu_activity, menu);
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem menuItem){

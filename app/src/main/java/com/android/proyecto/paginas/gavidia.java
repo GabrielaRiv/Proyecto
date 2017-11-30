@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.proyecto.Acerca_de;
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
@@ -129,13 +130,26 @@ public class gavidia extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_activity, menu);
         return true;
     }
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        Intent intent = new Intent(gavidia.this, Perfil.class);
-        startActivity(intent);
-        return true;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.perfil:
+                Intent intent1 = new Intent(gavidia.this, Perfil.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.acerca:
+                Intent intent2 = new Intent(gavidia.this, Acerca_de.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /*public static class PlaceholderFragment extends Fragment {

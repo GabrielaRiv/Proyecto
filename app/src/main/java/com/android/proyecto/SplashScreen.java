@@ -2,17 +2,15 @@ package com.android.proyecto;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-
-import com.android.proyecto.universidades.SantaAna;
+import android.widget.ProgressBar;
 
 public class SplashScreen extends AppCompatActivity {
-    private ImageView img;
+
+    private ProgressBar progresplash;
+    int progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +20,27 @@ public class SplashScreen extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        img = (ImageView) findViewById(R.id.img);
+        progresplash = (ProgressBar) findViewById(R.id.progresplash);
 
-        img.setOnClickListener(new View.OnClickListener() {
+        new  Thread(new Runnable() {
             @Override
-            public void onClick(View view) {
-                Intent pan = new Intent(SplashScreen.this, Departamentos.class);
-                startActivity(pan);
+            public void run() {
+                for (int i = 0; i<4; i++ ){
+                    progress += 25;
+                    progresplash.setProgress(progress);
+                    if(progress == progresplash.getMax()){
+                        Intent pan = new Intent(SplashScreen.this, Departamentos.class);
+                        startActivity(pan);
+                    }
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
             }
-        });
+        }).start();
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -38,6 +48,8 @@ public class SplashScreen extends AppCompatActivity {
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
             }
-        },3000);
+        },4000);
     }
+
+
 }

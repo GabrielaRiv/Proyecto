@@ -74,9 +74,7 @@ public class uso extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         Informacion informe =  ShareInformacion.getInstance(this).getInformacion();
-
 
         id.setText(String.valueOf(informe.getIduniversidad()));
         name.setText(informe.getNombre());

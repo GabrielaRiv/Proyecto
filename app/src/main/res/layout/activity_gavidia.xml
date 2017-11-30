@@ -89,15 +89,15 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/txt1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
-                        android:gravity="bottom|center"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="@string/mision"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -113,7 +113,7 @@
                         android:padding="6dp"
                         android:text="@string/vision"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -124,13 +124,13 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/txt2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:gravity="bottom|center"
                         android:text="@string/vision"
-                        android:textColor="@color/Cyan"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/negro" />
                 </TableRow>
 
                 <TableRow
@@ -148,7 +148,7 @@
                         android:paddingRight="10dp"
                         android:text="Texto Vision"
                         android:padding="6dp"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textAllCaps="false"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -161,14 +161,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
-                        android:gravity="bottom|center"
                         android:text="@string/carreras"
-                        android:textColor="@color/Cyan"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/negro" />
                 </TableRow>
 
                 <TableRow
@@ -186,7 +186,7 @@
                         android:paddingRight="10dp"
                         android:padding="6dp"
                         android:text="Carreras gavidia"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textAllCaps="false"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -199,13 +199,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="@string/telefono"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -226,7 +227,7 @@
                         android:text="Telefono gavidia"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -238,13 +239,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="@string/direccion"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -262,7 +264,7 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="Dirección gavidia"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:padding="6dp"
                         android:textAlignment="center"
                         android:textAllCaps="false"
@@ -277,13 +279,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="Sitio Web"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -298,14 +301,14 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textView3"
                         android:layout_toEndOf="@+id/textView3"
+                        android:autoLink="web"
+                        android:padding="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="Sitio web"
-                        android:textColor="@color/negro"
-                        android:autoLink="web"
-                        android:padding="6dp"
                         android:textAlignment="center"
                         android:textAllCaps="false"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -330,7 +333,7 @@
                         android:text="Latitud"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -356,7 +359,7 @@
                         android:text="Longitud"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -372,7 +375,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="30dp"
-                android:background="@color/Amber"
+                android:background="@color/aqua"
                 android:text="@string/ver"
                 android:textAllCaps="false"
                 android:textColor="@color/Amber1"

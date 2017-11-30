@@ -23,6 +23,9 @@ import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Marcador;
 import com.android.proyecto.clases.MarcadoresSingleton;
+import com.android.proyecto.fragments.fragmentcarreras;
+import com.android.proyecto.fragments.fragmentcontactos;
+import com.android.proyecto.fragments.fragmentvalores;
 import com.android.proyecto.mapa.MapaActivity;
 import com.android.proyecto.universidades.SantaAna;
 

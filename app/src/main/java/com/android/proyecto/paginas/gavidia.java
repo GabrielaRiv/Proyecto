@@ -2,6 +2,7 @@ package com.android.proyecto.paginas;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -25,12 +26,15 @@ import com.android.proyecto.universidades.SantaAna;
 
 public class gavidia extends AppCompatActivity {
     TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
+    TextView txt1, txt2, txt3, txt4, txt5, txt6;
     int option;
     Button mapa;
     private Toolbar toolbar;
   //  private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-
+    //fuente de letra
+    private Typeface script1;
+    private Typeface script3;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -56,10 +60,19 @@ public class gavidia extends AppCompatActivity {
         telefono = (TextView) findViewById(R.id.telefonogavidia);
         direccion = (TextView) findViewById(R.id.direcciongavidia);
         web = (TextView)findViewById(R.id.webgavidia);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         latitud = (TextView) findViewById(R.id.latitudgavidia);
         longitud = (TextView) findViewById(R.id.longitudgavidia);
 
+        txt1 = (TextView) findViewById(R.id.txt1);
+        txt2 = (TextView) findViewById(R.id.txt2);
+        txt3 = (TextView) findViewById(R.id.txt3);
+        txt4 = (TextView) findViewById(R.id.txt4);
+        txt5 = (TextView) findViewById(R.id.txt5);
+        txt6 = (TextView) findViewById(R.id.txt6);
+
+
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
@@ -92,6 +105,27 @@ public class gavidia extends AppCompatActivity {
                 startActivity(mapa);
             }
         });
+
+        //para las fuentes de las letras
+        String fuente1 ="fuentes/Black.otf";
+        String fuente3 ="fuentes/Regular.otf";
+        this.script1 = Typeface.createFromAsset(getAssets(), fuente1);
+        this.script3 = Typeface.createFromAsset(getAssets(), fuente3);
+        name.setTypeface(script1);
+        mision.setTypeface(script3);
+        vision.setTypeface(script3);
+        carreras.setTypeface(script3);
+        telefono.setTypeface(script3);
+        direccion.setTypeface(script3);
+        latitud.setTypeface(script3);
+        longitud.setTypeface(script3);
+        txt1.setTypeface(script3);
+        txt2.setTypeface(script3);
+        txt3.setTypeface(script3);
+        txt4.setTypeface(script3);
+        txt5.setTypeface(script3);
+        txt6.setTypeface(script3);
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

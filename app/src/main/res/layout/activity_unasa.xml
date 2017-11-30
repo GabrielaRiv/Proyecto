@@ -56,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="50dp"
+                android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp">
 
@@ -71,7 +72,7 @@
                         android:gravity="bottom|center"
                         android:padding="10dp"
                         android:text="Nombre U"
-                        android:textColor="@color/Brown"
+                        android:textColor="@color/negro"
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textSize="22sp"
@@ -84,15 +85,15 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/txt1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
-                        android:gravity="bottom|center"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:text="@string/mision"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -107,7 +108,7 @@
                         android:layout_height="wrap_content"
                         android:padding="6dp"
                         android:text="@string/vision"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textAllCaps="false"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -119,12 +120,12 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/txt2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:gravity="bottom|center"
                         android:text="@string/vision"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -143,7 +144,7 @@
                         android:paddingRight="10dp"
                         android:padding="6dp"
                         android:text="Texto Vision"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textAllCaps="false"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -156,14 +157,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
-                        android:gravity="bottom|center"
                         android:text="@string/carreras"
-                        android:textColor="@color/Cyan"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/negro" />
                 </TableRow>
 
                 <TableRow
@@ -182,7 +183,7 @@
                         android:paddingRight="10dp"
                         android:text="Carreras unasa"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -194,13 +195,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="@string/telefono"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -219,7 +221,7 @@
                         android:paddingRight="10dp"
                         android:text="Telefono unasa"
                         android:padding="6dp"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textSize="15sp"
@@ -233,14 +235,15 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="@string/direccion"
-                        android:textColor="@color/Cyan"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/negro" />
                 </TableRow>
 
                 <TableRow
@@ -260,7 +263,7 @@
                         android:text="Dirección unasa"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -272,13 +275,14 @@
                     android:gravity="bottom|center">
 
                     <TextView
+                        android:id="@+id/txt6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_below="@+id/textView3"
                         android:gravity="bottom|center"
                         android:text="Sitio Web"
-                        android:textColor="@color/Cyan"
+                        android:textColor="@color/negro"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </TableRow>
 
@@ -297,7 +301,7 @@
                         android:paddingRight="10dp"
                         android:text="Sitio web"
                         android:padding="6dp"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:autoLink="web"
                         android:textAlignment="center"
                         android:textAllCaps="false"
@@ -326,7 +330,7 @@
                         android:text="Latitud"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -352,7 +356,7 @@
                         android:text="Longitud"
                         android:textAlignment="center"
                         android:textAllCaps="false"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/gris"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -368,7 +372,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="30dp"
-                android:background="@color/Amber"
+                android:background="@color/aqua"
                 android:text="@string/ver"
                 android:textAllCaps="false"
                 android:textColor="@color/Amber1"

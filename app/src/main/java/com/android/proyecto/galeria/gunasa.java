@@ -18,7 +18,7 @@ public class gunasa extends AppCompatActivity {
         WebView view = (WebView) findViewById(R.id.web);
         view.getSettings().setJavaScriptEnabled(true);
         view.getSettings().setBuiltInZoomControls(false);
-        view.loadUrl("http://www.sda.heavywebdesign.com/android/galeria/unasa.php");
+        view.loadUrl("http://www.sda.heavywebdesign.com/android/gale/unasa/unasa.php");
         view.setWebViewClient(new WebViewClient(){
             public boolean shouldOverriceUrlLoading(WebView view, String url){
                 return false;

@@ -12,7 +12,7 @@ import com.android.proyecto.clases.SharedPrefManager;
 import com.android.proyecto.clases.User;
 
 public class Perfil extends AppCompatActivity {
-    TextView textViewId, textViewUsername, textViewEmail;
+    TextView textViewUsername, textViewEmail;
     private Toolbar toolbar;
 
     @Override
@@ -35,7 +35,7 @@ public class Perfil extends AppCompatActivity {
         }
 
 
-        textViewId = (TextView) findViewById(R.id.textViewId);
+
         textViewUsername = (TextView) findViewById(R.id.textViewUsername);
         textViewEmail = (TextView) findViewById(R.id.textViewEmail);
 
@@ -44,7 +44,6 @@ public class Perfil extends AppCompatActivity {
         User user = SharedPrefManager.getInstance(this).getUser();
 
         //setting the values to the textviews
-        textViewId.setText(String.valueOf(user.getId()));
         textViewUsername.setText(user.getUsername());
         textViewEmail.setText(user.getEmail());
 

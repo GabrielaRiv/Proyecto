@@ -100,9 +100,10 @@
         <activity android:name=".galeria.gunasa" />
         <activity android:name=".galeria.gupam" />
         <activity
-            android:theme="@style/AppTheme2"
             android:name=".mapa.MapaActivity"
-            android:label="@string/title_activity_mapa"></activity>
+            android:label="@string/title_activity_mapa"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".universidades.Acercade"></activity>
     </application>
 
 </manifest>

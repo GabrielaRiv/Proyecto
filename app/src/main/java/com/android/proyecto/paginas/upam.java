@@ -21,8 +21,11 @@ import com.android.proyecto.clases.Informacion;
 import com.android.proyecto.clases.Marcador;
 import com.android.proyecto.clases.MarcadoresSingleton;
 import com.android.proyecto.clases.ShareInformacion;
+import com.android.proyecto.galeria.gupam;
 import com.android.proyecto.mapa.MapaActivity;
+import com.android.proyecto.universidades.Acercade;
 import com.android.proyecto.universidades.Ahuachapan;
+import com.google.android.gms.maps.model.LatLng;
 
 public class upam extends AppCompatActivity {
     TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
@@ -124,69 +127,35 @@ public class upam extends AppCompatActivity {
         txt5.setTypeface(script3);
         txt6.setTypeface(script3);
     }
+//para el menu
 
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_activity, menu);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_mapa, menu);
         return true;
     }
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        Intent intent = new Intent(upam.this, Perfil.class);
-        startActivity(intent);
-        return true;
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        LatLng islamabad;
+        switch (item.getItemId()) {
+            case R.id.perfil:
+                Intent intent = new Intent(upam.this, Perfil.class);
+                startActivity(intent);
+                break;
+
+            case R.id.acerca:
+                Intent intent1 = new Intent(upam.this, Acercade.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.galeria:
+                Intent intent2 = new Intent(upam.this, gupam.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
-
-   /* public static class PlaceholderFragment extends Fragment {
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        public PlaceholderFragment() {
-        }
-
-        public static catolica.PlaceholderFragment newInstance(int sectionNumber) {
-            catolica.PlaceholderFragment fragment = new catolica.PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_fragmentvalores, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText((getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER))));
-            return rootView;
-        }
-    }
-
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-        public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return catolica.PlaceholderFragment.newInstance(position + 1);
-        }
-
-        @Override
-        public int getCount() {
-            // Show 3 total pages.
-            return 3;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "VALORES";
-                case 1:
-                    return "CARRERAS";
-                case 2:
-                    return "CONTACTOS";
-            }
-            return null;
-        }
-    }*/
 }

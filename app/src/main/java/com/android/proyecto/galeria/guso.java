@@ -13,13 +13,12 @@ public class guso extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guso);
-        setContentView(R.layout.activity_uso);
+        setContentView(R.layout.activity_gupam);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         WebView view = (WebView) findViewById(R.id.web);
         view.getSettings().setJavaScriptEnabled(true);
         view.getSettings().setBuiltInZoomControls(false);
-        view.loadUrl("http://www.sda.heavywebdesign.com/android/galeria/uso.php");
+        view.loadUrl("http://www.sda.heavywebdesign.com/android/gale/uso/uso.php");
         view.setWebViewClient(new WebViewClient(){
             public boolean shouldOverriceUrlLoading(WebView view, String url){
                 return false;

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.android.proyecto.universidades.Acercade;
 import com.android.proyecto.universidades.Ahuachapan;
 import com.android.proyecto.universidades.SantaAna;
 import com.android.proyecto.universidades.Sonsonate;
@@ -62,12 +63,25 @@ public class Departamentos extends AppCompatActivity {
        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
     }
     public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_activity, menu);
         return true;
     }
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        Intent intent = new Intent(Departamentos.this, Perfil.class);
-        startActivity(intent);
-        return true;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.perfil:
+                Intent intent1 = new Intent(Departamentos.this, Perfil.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.acerca:
+                Intent intent2 = new Intent(Departamentos.this, Acercade.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

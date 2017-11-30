@@ -18,7 +18,7 @@ public class gunab extends AppCompatActivity {
         WebView view = (WebView) findViewById(R.id.web);
         view.getSettings().setJavaScriptEnabled(true);
         view.getSettings().setBuiltInZoomControls(false);
-        view.loadUrl("http://www.sda.heavywebdesign.com/android/galeria/unab.php");
+        view.loadUrl("http://www.sda.heavywebdesign.com/android/gale/unab/unab.php");
         view.setWebViewClient(new WebViewClient(){
             public boolean shouldOverriceUrlLoading(WebView view, String url){
                 return false;

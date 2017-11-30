@@ -5,8 +5,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Marcador;
@@ -62,37 +60,5 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
             mMap.setMyLocationEnabled(true);
         }
-    }
-    //para el menu
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.menu_mapa, menu);
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        LatLng islamabad;
-        switch (item.getItemId()) {
-            case R.id.item_miUbicacion:
-                //islamabad = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
-                //mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(islamabad,ZOOM));
-                break;
-
-            case R.id.item_universidad:
-                islamabad = new LatLng(marcadorUNI.latitud, marcadorUNI.longitud);
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(islamabad,DEFAULT_ZOOM));
-                break;
-            case R.id.item_ruta:
-                //obtenerRuta();
-                break;
-            case R.id.item_actualizar:
-                //actualizarPosicion();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

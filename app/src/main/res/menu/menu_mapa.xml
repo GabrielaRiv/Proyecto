@@ -2,12 +2,22 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Mi ubicación"
-        android:id="@+id/item_miUbicacion"/>
-    <item android:title="Universidad"
-        android:id="@+id/item_universidad"/>
-    <item android:title="Trazar Ruta"
-        android:id="@+id/item_ruta"/>
-    <item android:title="Actualizar mi ubicación"
-        android:id="@+id/item_actualizar"/>
+    <item
+        android:id="@+id/perfil"
+        android:title="Ver mi Perfil"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:id="@+id/acerca"
+        android:title="Acerca de"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:id="@+id/galeria"
+        android:title="Galeria"
+        app:showAsAction="always"
+        />
+
 </menu>

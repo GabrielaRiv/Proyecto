@@ -18,7 +18,7 @@ public class gupam extends AppCompatActivity {
         WebView view = (WebView) findViewById(R.id.web);
         view.getSettings().setJavaScriptEnabled(true);
         view.getSettings().setBuiltInZoomControls(false);
-        view.loadUrl("http://www.sda.heavywebdesign.com/android/galeria/upam.php");
+        view.loadUrl("http://www.sda.heavywebdesign.com/android/gale/upam/upam.php");
         view.setWebViewClient(new WebViewClient(){
             public boolean shouldOverriceUrlLoading(WebView view, String url){
                 return false;

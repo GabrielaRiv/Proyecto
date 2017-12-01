@@ -72,7 +72,7 @@
                         android:gravity="bottom|center"
                         android:padding="10dp"
                         android:text="Nombre U"
-                        android:textColor="@color/gris"
+                        android:textColor="@color/negro"
                         android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textSize="22sp"

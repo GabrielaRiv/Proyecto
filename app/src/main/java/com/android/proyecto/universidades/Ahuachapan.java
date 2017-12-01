@@ -5,7 +5,6 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +28,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 public class Ahuachapan extends AppCompatActivity {
     LinearLayout Panamericana;
-    private Toolbar toolbar;
+   // private Toolbar toolbar;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -49,7 +48,7 @@ public class Ahuachapan extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // toolbar = (Toolbar) findViewById(R.id.toolbar);
         Panamericana = (LinearLayout) findViewById(R.id.Panamericana);
 
         Panamericana.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +58,7 @@ public class Ahuachapan extends AppCompatActivity {
             }
         });
 
-        setSupportActionBar(toolbar);
+       // setSupportActionBar(toolbar);
 
     }
     public boolean onCreateOptionsMenu(Menu menu){

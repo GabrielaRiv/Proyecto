@@ -16,12 +16,9 @@
             android:layout_height="match_parent"
             android:paddingBottom="10dp">
 
-            <include layout="@layout/toolbar"/>
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       android:layout_marginTop="100dp">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -90,7 +87,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView3"
-                android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="@string/mision"
                 android:textColor="@color/negro"
@@ -106,7 +102,8 @@
                 android:id="@+id/misionupam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:text="@string/vision"
                 android:textColor="@color/gris"
                 android:textAllCaps="false"
@@ -140,9 +137,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3"
-                android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:text="Texto Vision"
                 android:textColor="@color/gris"
                 android:textAllCaps="false"
@@ -178,10 +175,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3"
-                android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="Carreras Upam"
-                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:textColor="@color/gris"
                 android:textAllCaps="false"
                 android:textSize="15sp"
@@ -199,7 +196,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView3"
-                android:gravity="bottom|center"
                 android:text="@string/telefono"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textColor="@color/negro" />
@@ -216,12 +212,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3"
-                android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="Telefono UPAM"
-                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:textColor="@color/gris"
-                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -239,7 +234,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView3"
-                android:gravity="bottom|center"
                 android:text="@string/direccion"
                 android:textColor="@color/negro"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
@@ -256,12 +250,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3"
-                android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:text="Dirección UPAM"
-                android:padding="6dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:textColor="@color/gris"
-                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -279,8 +272,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView3"
-                android:gravity="bottom|center"
-
                 android:text="Sitio Web"
                 android:textColor="@color/negro"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
@@ -298,70 +289,15 @@
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3"
                 android:autoLink="web"
-                android:padding="6dp"
-                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:paddingRight="10dp"
                 android:text="Sitio web"
-                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 </TableRow>
-        <!--  coordenadas -->
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="bottom|center">
-
-
-
-            <TextView
-                android:id="@+id/latitudupam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView3"
-                android:layout_toEndOf="@+id/textView3"
-                android:autoLink="web"
-                android:padding="6dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="Latitud"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/gris"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-        </TableRow>
-
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom|center">
-
-
-            <TextView
-                android:id="@+id/longitudupam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView3"
-                android:layout_toEndOf="@+id/textView3"
-                android:autoLink="web"
-                android:padding="6dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="Longitud"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/gris"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-        </TableRow>
-
-        <!-- fin coordenadas -->
 
          </TableLayout>
             <Button

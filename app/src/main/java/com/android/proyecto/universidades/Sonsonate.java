@@ -5,7 +5,6 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +33,7 @@ public class Sonsonate extends AppCompatActivity {
     LinearLayout uso;
     LinearLayout uma;
     LinearLayout unab;
-    private Toolbar toolbar;
+   // private Toolbar toolbar;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -55,8 +54,8 @@ public class Sonsonate extends AppCompatActivity {
         uma = (LinearLayout) findViewById(R.id.uma);
         unab = (LinearLayout) findViewById(R.id.unab);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
          uso.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,7 +3,6 @@ package com.android.proyecto;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +17,7 @@ public class Departamentos extends AppCompatActivity {
     LinearLayout Sonsonate;
     LinearLayout SantaAna;
     LinearLayout Ahuachapan;
-    private Toolbar toolbar;
+   // private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +28,9 @@ public class Departamentos extends AppCompatActivity {
         Sonsonate = (LinearLayout) findViewById(R.id.Sonsonate);
         Ahuachapan = (LinearLayout) findViewById(R.id.Ahuachapan);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+      //  toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-        setSupportActionBar(toolbar);
+       // setSupportActionBar(toolbar);
 
         Sonsonate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +55,8 @@ public class Departamentos extends AppCompatActivity {
                 startActivity(ahuachapan);
             }
         });
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         //Establecemos la orientacion Vertical
        // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);

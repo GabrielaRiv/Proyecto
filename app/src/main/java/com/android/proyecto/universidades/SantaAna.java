@@ -5,7 +5,6 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,7 +34,7 @@ public class SantaAna extends AppCompatActivity {
     LinearLayout catolica ;
     LinearLayout gavidia;
     LinearLayout autonoma;
-    private Toolbar toolbar;
+    //private Toolbar toolbar;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -85,8 +84,8 @@ public class SantaAna extends AppCompatActivity {
             }
         });
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
     }
 

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,7 +12,7 @@ import com.android.proyecto.clases.User;
 
 public class Perfil extends AppCompatActivity {
     TextView textViewUsername, textViewEmail;
-    private Toolbar toolbar;
+    //private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +21,10 @@ public class Perfil extends AppCompatActivity {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         //if the user is not logged in
         //starting the login activity

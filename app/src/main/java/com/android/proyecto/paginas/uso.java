@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,13 +25,10 @@ import com.android.proyecto.universidades.Sonsonate;
 import com.google.android.gms.maps.model.LatLng;
 
 public class uso extends AppCompatActivity {
-    TextView id, name, mision, vision, carreras, telefono, direccion, web, latitud, longitud;
+    TextView id, name, mision, vision, carreras, telefono, direccion, web;
     TextView txt1, txt2, txt3, txt4, txt5, txt6;
-    int option;
     Button mapa;
-    private Toolbar toolbar;
-    //private SectionsPagerAdapter mSectionsPagerAdapter;
-    private ViewPager mViewPager;
+   // fuente para letra
     private Typeface script1;
     private Typeface script3;
 
@@ -63,8 +57,6 @@ public class uso extends AppCompatActivity {
         telefono = (TextView) findViewById(R.id.telefonouso);
         direccion = (TextView) findViewById(R.id.direccionuso);
         web = (TextView)findViewById(R.id.webuso);
-        latitud = (TextView) findViewById(R.id.latituduso);
-        longitud = (TextView) findViewById(R.id.longituduso);
 
         txt1 = (TextView) findViewById(R.id.txt1);
         txt2 = (TextView) findViewById(R.id.txt2);
@@ -72,10 +64,6 @@ public class uso extends AppCompatActivity {
         txt4 = (TextView) findViewById(R.id.txt4);
         txt5 = (TextView) findViewById(R.id.txt5);
         txt6 = (TextView) findViewById(R.id.txt6);
-
-
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         Informacion informe =  ShareInformacion.getInstance(this).getInformacion();
 
@@ -87,14 +75,6 @@ public class uso extends AppCompatActivity {
         telefono.setText(informe.getTelefono());
         direccion.setText(informe.getDireccion());
         web.setText(informe.getWeb());
-        latitud.setText(informe.getLatitud());
-        longitud.setText(informe.getLongitud());
-
-        //mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        mViewPager = (ViewPager) findViewById(R.id.container);
-       // mViewPager.setAdapter(mSectionsPagerAdapter);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
 
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,8 +97,6 @@ public class uso extends AppCompatActivity {
         carreras.setTypeface(script3);
         telefono.setTypeface(script3);
         direccion.setTypeface(script3);
-        latitud.setTypeface(script3);
-        longitud.setTypeface(script3);
         txt1.setTypeface(script3);
         txt2.setTypeface(script3);
         txt3.setTypeface(script3);

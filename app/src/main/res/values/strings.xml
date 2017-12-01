@@ -51,4 +51,18 @@
     <string name="title_activity_mapaunasa">Map</string>
     <string name="title_activity_mapaupam">Map</string>
     <string name="title_activity_mapa2">Map</string>
+
+  <string name="next">Siguiente</string>
+  <string name="skip">Saltar</string>
+  <string name="start">Finilizar</string>
+  <string name="title_slide1">Elija una Opcion</string>
+  <string name="desc_slide1">Clic en el departamento que desee</string>
+  <string name="title_slide2">Elija una Opción</string>
+  <string name="desc_slide2">Clic en la universidad que desee</string>
+  <string name="title_slide3">Opción Galería</string>
+  <string name="desc_slide3">Permite visualizar una galería de la universidad</string>
+  <string name="title_slide4">Botón Ver Mapa</string>
+  <string name="desc_slide4">Permite visualizar la ubicación de la universidad en el mapa</string>
+  <string name="title_slide5">Menú de Opciones</string>
+  <string name="desc_slide5">Le permite ir a su Perfil y Acerca de</string>
 </resources>

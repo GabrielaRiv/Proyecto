@@ -75,7 +75,7 @@
             android:layout_centerHorizontal="true"
             android:paddingTop="10dp"
             android:layout_below="@+id/occidente"
-            android:text="Grupo de desarrolladores"
+            android:text="Equipo de desarrollo"
             android:textColor="@color/negro"
             android:textSize="25dp"
             android:paddingLeft="16dp"
@@ -179,7 +179,8 @@
             android:textColor="@color/negro"
             android:textSize="15dp"
             android:textAlignment="center"
-            android:paddingLeft="16dp" />
+            android:paddingLeft="16dp"
+            android:layout_marginTop="5dp"/>
 
 
     </LinearLayout>

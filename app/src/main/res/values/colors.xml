@@ -12,5 +12,15 @@
     <color name="aqua">#2E9AFE</color>
     <color name="negro">#000000</color>
     <color name="gris">#585858</color>
+    <!-- el backcolor -->
+    <color name="bg_screen1">#b12515</color>
+    <color name="bg_screen2">#FFBB00</color>
+    <color name="bg_screen3">#74a443</color>
 
+    <!-- colores activar-->
+    <color name="dot_active">#000000</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
 </resources>

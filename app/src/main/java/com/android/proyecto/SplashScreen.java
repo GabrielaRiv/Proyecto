@@ -28,7 +28,7 @@ public class SplashScreen extends AppCompatActivity {
                     progress += 25;
                     progresplash.setProgress(progress);
                     if(progress == progresplash.getMax()){
-                        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                        Intent intent = new Intent(SplashScreen.this, IntroActivity.class);
                         startActivity(intent);
                     }
                     try {
@@ -44,7 +44,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+  finish();
             }
         },4000);
     }

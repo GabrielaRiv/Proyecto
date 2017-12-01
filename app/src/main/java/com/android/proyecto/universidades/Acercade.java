@@ -1,12 +1,13 @@
 package com.android.proyecto.universidades;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.android.proyecto.Departamentos;
+import com.android.proyecto.Instrucciones;
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 
@@ -38,6 +39,10 @@ public class Acercade extends AppCompatActivity {
                 Intent intent2 = new Intent(Acercade.this, Acercade.class);
                 startActivity(intent2);
                 break;
+
+            case R.id.infor:
+                Intent intent3 = new Intent(Acercade.this, Instrucciones.class);
+                startActivity(intent3);
         }
         return super.onOptionsItemSelected(item);
     }

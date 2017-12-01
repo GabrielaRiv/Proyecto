@@ -72,6 +72,10 @@ public class Departamentos extends AppCompatActivity {
                 Intent intent2 = new Intent(Departamentos.this, Acercade.class);
                 startActivity(intent2);
                 break;
+
+            case R.id.infor:
+                Intent intent3 = new Intent(Departamentos.this, Instrucciones.class);
+                startActivity(intent3);
         }
         return super.onOptionsItemSelected(item);
     }

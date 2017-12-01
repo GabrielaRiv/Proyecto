@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.proyecto.Departamentos;
+import com.android.proyecto.Instrucciones;
 import com.android.proyecto.Perfil;
 import com.android.proyecto.R;
 import com.android.proyecto.clases.Informacion;
@@ -152,6 +153,10 @@ public class Ahuachapan extends AppCompatActivity {
                 Intent intent2 = new Intent(Ahuachapan.this, Acercade.class);
                 startActivity(intent2);
                 break;
+
+            case R.id.infor:
+                Intent intent3 = new Intent(Ahuachapan.this, Instrucciones.class);
+                startActivity(intent3);
         }
         return super.onOptionsItemSelected(item);
     }

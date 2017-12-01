@@ -62,7 +62,7 @@
             android:layout_centerHorizontal="true"
             android:paddingTop="10dp"
             android:layout_below="@+id/occidente"
-            android:text="Buscar la univirsidad adecuada para ti es mas rapido. Obtniendo la información básica de las universidades de occidente y su ubicacion en el mapa."
+            android:text="Buscar la univirsidad adecuada para ti es mas rápido. Obteniendo la información básica de las universidades de occidente y su ubicación en el mapa."
             android:textColor="@color/negro"
             android:textSize="15dp"
             android:paddingLeft="16dp"
@@ -123,7 +123,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="7dp"
             android:layout_below="@+id/occidente"
-            android:text="Geovany MAcua"
+            android:text="Geovany Macúa"
             android:textColor="@color/negro"
             android:textSize="15dp"
             android:paddingLeft="16dp" />

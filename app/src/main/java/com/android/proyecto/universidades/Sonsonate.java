@@ -33,7 +33,6 @@ public class Sonsonate extends AppCompatActivity {
     LinearLayout uso;
     LinearLayout uma;
     LinearLayout unab;
-   // private Toolbar toolbar;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -54,10 +53,7 @@ public class Sonsonate extends AppCompatActivity {
         uma = (LinearLayout) findViewById(R.id.uma);
         unab = (LinearLayout) findViewById(R.id.unab);
 
-       // toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-         uso.setOnClickListener(new View.OnClickListener() {
+        uso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 verinformacion1();
@@ -78,16 +74,6 @@ public class Sonsonate extends AppCompatActivity {
             }
         });
 
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_activity, menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        Intent intent = new Intent(Sonsonate.this, Perfil.class);
-        startActivity(intent);
-        return true;
     }
 
     private void verinformacion33(){
@@ -312,5 +298,29 @@ public class Sonsonate extends AppCompatActivity {
         }
         verInformacion us = new verInformacion();
         us.execute();
+    }
+
+    //para el menu
+    public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.perfil:
+                Intent intent1 = new Intent(Sonsonate.this, Perfil.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.acerca:
+                Intent intent2 = new Intent(Sonsonate.this, Acercade.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

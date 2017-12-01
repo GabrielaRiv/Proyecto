@@ -34,7 +34,6 @@ public class SantaAna extends AppCompatActivity {
     LinearLayout catolica ;
     LinearLayout gavidia;
     LinearLayout autonoma;
-    //private Toolbar toolbar;
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         // TODO Auto-generated method stub
@@ -84,19 +83,6 @@ public class SantaAna extends AppCompatActivity {
             }
         });
 
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_activity, menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem menuItem){
-        Intent intent = new Intent(SantaAna.this, Perfil.class);
-        startActivity(intent);
-        return true;
     }
 
     private void verinformacion4(){
@@ -396,6 +382,30 @@ public class SantaAna extends AppCompatActivity {
         }
         verInformacion ud = new verInformacion();
         ud.execute();
+    }
+
+    //para el menu
+    public boolean onCreateOptionsMenu(Menu menu){
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.perfil:
+                Intent intent1 = new Intent(SantaAna.this, Perfil.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.acerca:
+                Intent intent2 = new Intent(SantaAna.this, Acercade.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 

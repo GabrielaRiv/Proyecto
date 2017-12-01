@@ -17,7 +17,6 @@ public class Departamentos extends AppCompatActivity {
     LinearLayout Sonsonate;
     LinearLayout SantaAna;
     LinearLayout Ahuachapan;
-   // private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +26,6 @@ public class Departamentos extends AppCompatActivity {
         SantaAna  = (LinearLayout) findViewById(R.id.SantaAna);
         Sonsonate = (LinearLayout) findViewById(R.id.Sonsonate);
         Ahuachapan = (LinearLayout) findViewById(R.id.Ahuachapan);
-
-      //  toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-       // setSupportActionBar(toolbar);
 
         Sonsonate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,12 +50,9 @@ public class Departamentos extends AppCompatActivity {
                 startActivity(ahuachapan);
             }
         });
-       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-        //Establecemos la orientacion Vertical
-       // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
     }
+
+    //para el menu
     public boolean onCreateOptionsMenu(Menu menu){
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_activity, menu);

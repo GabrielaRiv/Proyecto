@@ -17,7 +17,6 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         progresplash = (ProgressBar) findViewById(R.id.progresplash);
@@ -29,8 +28,8 @@ public class SplashScreen extends AppCompatActivity {
                     progress += 25;
                     progresplash.setProgress(progress);
                     if(progress == progresplash.getMax()){
-                        Intent pan = new Intent(SplashScreen.this, Departamentos.class);
-                        startActivity(pan);
+                        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                        startActivity(intent);
                     }
                     try {
                         Thread.sleep(1000);
@@ -45,11 +44,8 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(intent);
+
             }
         },4000);
     }
-
-
 }

@@ -217,7 +217,6 @@
                         android:paddingTop="6dp"
                         android:layout_marginBottom="6dp"
                         android:text="Telefono unasa"
-                        android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textColor="@color/gris"
                         android:textSize="15sp"

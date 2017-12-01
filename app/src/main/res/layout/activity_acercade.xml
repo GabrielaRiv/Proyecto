@@ -168,6 +168,19 @@
             android:textSize="15dp"
             android:paddingLeft="16dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:layout_below="@+id/occidente"
+            android:text="Proyecto Android 2017-Todos los derechos reservados"
+            android:textColor="@color/negro"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:paddingLeft="16dp" />
+
 
     </LinearLayout>
 

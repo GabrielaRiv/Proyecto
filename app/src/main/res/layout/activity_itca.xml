@@ -266,7 +266,6 @@
                         android:layout_marginBottom="6dp"
                         android:text="Dirección itca"
                         android:textColor="@color/gris"
-                        android:textAlignment="center"
                         android:textAllCaps="false"
                         android:textSize="15sp"
                         android:textStyle="bold" />

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.android.proyecto.clases.MarcadoresSingleton;
 import com.android.proyecto.clases.RequestHandler;
 import com.android.proyecto.clases.SharedPrefManager;
 import com.android.proyecto.clases.URLs;

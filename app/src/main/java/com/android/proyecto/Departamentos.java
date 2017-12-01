@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.android.proyecto.clases.MarcadoresSingleton;
 import com.android.proyecto.universidades.Acercade;
 import com.android.proyecto.universidades.Ahuachapan;
 import com.android.proyecto.universidades.SantaAna;
@@ -26,6 +27,8 @@ public class Departamentos extends AppCompatActivity {
         SantaAna  = (LinearLayout) findViewById(R.id.SantaAna);
         Sonsonate = (LinearLayout) findViewById(R.id.Sonsonate);
         Ahuachapan = (LinearLayout) findViewById(R.id.Ahuachapan);
+
+        MarcadoresSingleton.getInstance().llenarMarcadores();
 
         Sonsonate.setOnClickListener(new View.OnClickListener() {
             @Override

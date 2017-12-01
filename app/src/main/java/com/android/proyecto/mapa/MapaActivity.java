@@ -33,10 +33,14 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         marcadorUNI = (Marcador) this.getIntent().getExtras().getSerializable("MARCADOR");
         setContentView(R.layout.activity_mapa);
 
+
+
+
         //para el mapa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
     //cuando el mapa este listo agrego el marcador de la universidad

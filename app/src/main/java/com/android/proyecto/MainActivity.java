@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //TODO en este momento lleno los marcadores para poder usarlos dentro de toda la app
-        MarcadoresSingleton.getInstance().llenarMarcadores();
+
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
